@@ -68,37 +68,69 @@ My technical interests revolve around digital system design, RTL modeling, and h
 
 ### Featured Projects
 
-#### 1. Reactor Temperature Control System
-> Predictive/control algorithms and hardware implementation exploration.
+#### 1. [Dual-Band Frequency-Selective Indicator Circuit](https://github.com/shreyasjaradhya/frequency-selective-circuit)
+> Single-input analog frequency discriminator activating dual LEDs for 0–5 kHz and 6–12 kHz bands.
 
-* **Domain**: Control Systems & Predictive Algorithms
-* **Overview**: Implemented predictive and control algorithms to manage closed-loop temperature dynamics in a simulated batch reactor environment. Focused on system stability, parameter tuning, and hardware execution feasibility.
-* **Tools & Technologies**: Python, MATLAB, Control Systems Theory
-* **Status**: *Academic & Research Exploration*
+* **Domain**: Analog Electronics & Filter Design
+* **Overview**: Implemented and hardware-verified an active RC frequency-selective circuit for Analog Electronics Circuits (AEC). Incorporates a 1st-order Sallen-Key low-pass filter (0–5 kHz), cascaded band-pass filter (6–12 kHz), LM358 buffer/comparators, 1N5819 envelope detectors, and LED indicators.
+* **Tools & Technologies**: `LTspice`, `Analog Circuits`, `RC Filters`, `LM358`, `Breadboard/DSO Verification`
+* **Status**: *Hardware Prototyped & Verified* • [View Repository →](https://github.com/shreyasjaradhya/frequency-selective-circuit)
 
-#### 2. Digital Timer
-> Digital logic and synchronous timer design.
+#### 2. [Hospital Management System using Python](https://github.com/shreyasjaradhya/hospital-management-system-python)
+> Automated patient administration, persistent flat-file handling, and automated SMTP email billing.
+
+* **Domain**: Python Automation & Systems
+* **Overview**: Streamlined hospital administration from admission to discharge with persistent file records (`patients.txt`), ID-based search and record management, itemized bill calculation (ward charges, medicine fees, doctor consultation), and automated invoice dispatch via Python `smtplib`.
+* **Tools & Technologies**: `Python 3`, `File Handling`, `SMTP Automation`, `MIME Email`
+* **Status**: *Functional Software Suite* • [View Repository →](https://github.com/shreyasjaradhya/hospital-management-system-python)
+
+#### 3. [FIFO Buffer Design & Constrained-Random OOP Verification](https://github.com/shreyasjaradhya/fifo-buffer-systemverilog)
+> Synthesizable FIFO RTL with byte-enable masking and complete OOP SystemVerilog verification testbench.
+
+* **Domain**: VLSI Design & Hardware Verification
+* **Overview**: Designed a parameterized FIFO buffer RTL with First-Word Fall-Through (FWFT), synchronous active-low reset, and byte-enable writes. Built a layered OOP SystemVerilog verification environment utilizing interface modports, BFMs, mailboxes, and self-checking scoreboard.
+* **Tools & Technologies**: `SystemVerilog`, `RTL Design`, `OOP Testbench`, `QuestaSim / ModelSim`, `GTKWave`
+* **Status**: *RTL & Verification Verified* • [View Repository →](https://github.com/shreyasjaradhya/fifo-buffer-systemverilog)
+
+#### 4. [Electronic Circuit Design & Simulation using Tinkercad](https://github.com/shreyasjaradhya/tinkercad-electronic-circuit-design)
+> Academic survey and empirical simulation study on basic electronics, Ohm's law, and Arduino prototyping.
+
+* **Domain**: Circuit Simulation & Instrumentation
+* **Overview**: Two-week Internship I academic survey exploring Autodesk Tinkercad for circuit design. Empirically analyzed Series vs. Parallel LED branch voltages, validated Ohm's law against digital multimeter measurements, and programmed interactive microcontroller prototypes.
+* **Tools & Technologies**: `Autodesk Tinkercad`, `Circuit Simulation`, `Ohm's Law`, `Arduino C++`
+* **Status**: *Academic Survey & Simulation* • [View Repository →](https://github.com/shreyasjaradhya/tinkercad-electronic-circuit-design)
+
+#### 5. [Digital Timer using FPGA](https://github.com/shreyasjaradhya/digital-timer-fpga)
+> Synchronous digital timing architecture with clock-enable division and 7-segment multiplexing.
 
 * **Domain**: Digital Design & FPGA
-* **Overview**: Designed a digital timing system using sequential logic, clock division networks, and synchronous counter architectures. Explored timing constraints and 7-segment display multiplexing.
-* **Tools & Technologies**: Verilog HDL, Digital Electronics, FPGA Design
-* **Status**: *Hardware Synthesis & Simulation*
+* **Overview**: Designed a synchronous digital timer in Verilog HDL featuring hierarchical 50 MHz to 1 Hz clock division, cascaded BCD counter logic (seconds 00–59, minutes 00–59), Start/Pause/Reset FSM control, and 1 kHz time-multiplexed 7-segment display driver.
+* **Tools & Technologies**: `Verilog HDL`, `FPGA Synthesis`, `Xilinx Vivado`, `Digital Electronics`
+* **Status**: *Synthesizable RTL & Simulated* • [View Repository →](https://github.com/shreyasjaradhya/digital-timer-fpga)
 
-#### 3. Traffic Light Controller
-> Finite State Machine (FSM) based sequential digital design.
+#### 6. [Traffic Light Controller](https://github.com/shreyasjaradhya/traffic-light-controller)
+> Deterministic Moore Finite State Machine (FSM) intersection traffic controller with safety interlocks.
 
 * **Domain**: Digital Systems & State Machine Design
-* **Overview**: Modeled and verified an automated traffic junction controller based on a deterministic Finite State Machine (FSM). Features state transition logic, interval delay counters, and safety fault states.
-* **Tools & Technologies**: Verilog HDL, FSM Modeling, ModelSim
-* **Status**: *RTL Verification & Simulation*
+* **Overview**: Modeled and verified a deterministic 4-state Moore Finite State Machine (FSM) in Verilog HDL cycling through NS_GREEN, NS_YELLOW, EW_GREEN, and EW_YELLOW phases with programmable dwell timers, pedestrian request handling, and mutual exclusion lamp checks.
+* **Tools & Technologies**: `Verilog HDL`, `FSM Modeling`, `ModelSim / GTKWave`
+* **Status**: *RTL Verification & Simulation* • [View Repository →](https://github.com/shreyasjaradhya/traffic-light-controller)
 
-#### 4. Arduino Hospital Robot
-> Embedded robotic system integrating environmental sensors and motor control.
+#### 7. [Autonomous Hospital Utility Robot](https://github.com/shreyasjaradhya/arduino-hospital-robot)
+> Embedded robotic prototype integrating ultrasonic obstacle avoidance and environmental telemetry.
 
 * **Domain**: Embedded Systems & Robotics
-* **Overview**: Engineered an autonomous robotic prototype designed for indoor hospital assistance. Integrated ultrasonic distance sensing for collision avoidance, temperature/humidity monitoring arrays, and PWM motor actuation.
-* **Tools & Technologies**: Embedded C, Arduino, Sensors, Motor Drivers
-* **Status**: *Functional Hardware Prototype*
+* **Overview**: Engineered an autonomous robotic prototype designed for indoor hospital assistance. Integrated HC-SR04 ultrasonic time-of-flight collision avoidance, ambient temperature/humidity telemetry, and PWM differential H-bridge DC motor control.
+* **Tools & Technologies**: `Embedded C++`, `Arduino`, `HC-SR04`, `Motor Drivers`, `Sensors`
+* **Status**: *Functional Hardware Prototype* • [View Repository →](https://github.com/shreyasjaradhya/arduino-hospital-robot)
+
+#### 8. [Reactor Temperature Control System](https://github.com/shreyasjaradhya/reactor-temperature-control)
+> Closed-loop thermal regulation and predictive control simulation for industrial batch reactors.
+
+* **Domain**: Control Systems & Thermal Dynamics
+* **Overview**: Simulated closed-loop temperature dynamics for industrial chemical batch reactors with thermal inertia, non-linear jacket heat transfer, and transport dead-time lags, comparing Bang-Bang, Anti-Windup PID, and adaptive predictive trajectory control.
+* **Tools & Technologies**: `Python`, `Control Systems Theory`, `PID Control`, `Process Simulation`
+* **Status**: *Research & Process Simulation* • [View Repository →](https://github.com/shreyasjaradhya/reactor-temperature-control)
 
 ---
 
@@ -133,7 +165,7 @@ My technical interests revolve around digital system design, RTL modeling, and h
 
 ### Connect With Me
 
-* 💼 **LinkedIn**: [Add Your LinkedIn Profile URL Here](https://linkedin.com/in/)
+* 💼 **LinkedIn**: [Shreyas Aradhya](https://www.linkedin.com/in/shreyas-aradhya-0b9592321)
 * 🌐 **Portfolio**: [View Portfolio](https://github.com/shreyasjaradhya/my-portfolio-next)
 * 🐙 **GitHub**: [@shreyasjaradhya](https://github.com/shreyasjaradhya)
 * ✉️ **Email**: [shreyasjaradhya@gmail.com](mailto:shreyasjaradhya@gmail.com)
